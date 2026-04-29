@@ -1,22 +1,32 @@
-Mini E-commerce Data Pipeline - Local Setup
+# 🛒 Mini E-commerce Data Pipeline (Local Setup)
 
-Goal: Understand the ETL flow without cloud complexity
-What You'll Build:
+## 🎯 Goal
 
-Scrape product data from a dummy e-commerce site (or use Faker library)
-Clean & transform data with Pandas
-Load into SQLite database
-Create basic SQL queries for analysis
+Understand the **ETL (Extract, Transform, Load)** process without cloud complexity.
 
-Tech Stack:
+---
 
-Python (requests/BeautifulSoup or Faker)
-Pandas for transformation
-SQL for storage
-Basic SQL queries
+## 🚀 What You'll Build
 
-Deliverables:
+* Extract product data (via scraping or Faker)
+* Clean and transform data using Pandas
+* Load processed data into a SQLite database
+* Perform basic analysis using SQL queries
 
+---
+
+## 🛠️ Tech Stack
+
+* Python (requests / BeautifulSoup or Faker)
+* Pandas (data transformation)
+* MySQL (data storage)
+* SQL (analysis)
+
+---
+
+## 📁 Project Structure
+
+```
 mini-ecommerce-pipeline/
 │
 ├── data/
@@ -34,9 +44,38 @@ mini-ecommerce-pipeline/
 ├── README.md
 ├── .gitignore
 └── venv/
+```
 
-Key Learnings:
+---
 
-ETL concepts
-Data quality checks
-Basic pipeline orchestration
+## 🧠 Key Learnings
+
+* ETL pipeline fundamentals
+* Data cleaning & quality checks
+* Basic pipeline orchestration
+
+---
+
+## ▶️ How to Run
+
+1. Create and activate virtual environment
+2. Install dependencies:
+
+   ```
+   pip install -r requirements.txt
+   ```
+3. Run pipeline:
+
+   ```
+   python scripts/run_pipeline.py
+   ```
+
+---
+
+## 📌 Notes
+
+* Raw data is stored in `data/raw/`
+* Cleaned data is stored in `data/processed/`
+* SQL queries are in `analysis.sql`
+
+---
