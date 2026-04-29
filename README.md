@@ -1,4 +1,5 @@
 Mini E-commerce Data Pipeline - Local Setup
+
 Goal: Understand the ETL flow without cloud complexity
 What You'll Build:
 
@@ -11,18 +12,29 @@ Tech Stack:
 
 Python (requests/BeautifulSoup or Faker)
 Pandas for transformation
-SQLite for storage
+SQL for storage
 Basic SQL queries
 
 Deliverables:
 
 mini-ecommerce-pipeline/
-├── data_extraction.py       # Generate/scrape product data
-├── data_transformation.py   # Clean & transform
-├── data_loading.py          # Load to SQLite
-├── analysis.sql             # Sample queries
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── scripts/
+│   ├── data_extraction.py
+│   ├── data_transformation.py
+│   ├── data_loading.py
+│   └── run_pipeline.py
+│
+├── analysis.sql
 ├── requirements.txt
-└── README.md
+├── README.md
+├── .gitignore
+└── venv/
+
 Key Learnings:
 
 ETL concepts
