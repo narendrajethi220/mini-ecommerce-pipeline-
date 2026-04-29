@@ -8,7 +8,7 @@ Understand the **ETL (Extract, Transform, Load)** process without cloud complexi
 
 ## 🚀 What You'll Build
 
-* Extract product data (via scraping or Faker)
+* Extract product data (via Faker)
 * Clean and transform data using Pandas
 * Load processed data into a SQLite database
 * Perform basic analysis using SQL queries
@@ -17,7 +17,7 @@ Understand the **ETL (Extract, Transform, Load)** process without cloud complexi
 
 ## 🛠️ Tech Stack
 
-* Python (requests / BeautifulSoup or Faker)
+* Python (requests / Faker)
 * Pandas (data transformation)
 * MySQL (data storage)
 * SQL (analysis)
