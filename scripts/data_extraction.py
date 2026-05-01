@@ -1,10 +1,16 @@
 from faker import Faker
 import faker_commerce
+import json
 
 fake=Faker() 
 fake.add_provider(faker_commerce.Provider)
 
-for i in range(10):
+PRODUCT_COUNT=5000
+FILE_PATH="../data/raw/"
+products_list=[]
+
+
+for i in range(PRODUCT_COUNT):
     product={
         "id":fake.uuid4(),
         "name":fake.ecommerce_name(),
@@ -15,4 +21,8 @@ for i in range(10):
         "sku":fake.bothify(text='PROD-??-###',letters='ABCDE'),
         "timestamp":fake.date_time_this_year().isoformat()
     }
-    print(product)
+    products_list.append(product)
+
+
+with open (FILE_PATH+"products.json","w") as add_prod:
+    json.dump(products_list,add_prod)
