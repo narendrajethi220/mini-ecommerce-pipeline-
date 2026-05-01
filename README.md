@@ -6,7 +6,7 @@ Understand the **ETL (Extract, Transform, Load)** process without cloud complexi
 
 ---
 
-## 🚀 What You'll Build
+## 🚀 Build 
 
 * Extract product data (via Faker)
 * Clean and transform data using Pandas
